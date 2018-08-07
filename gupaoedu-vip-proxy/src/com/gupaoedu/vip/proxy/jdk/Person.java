@@ -4,8 +4,8 @@ public interface Person {
 	
 	void findeLove();
 	
-	String Sex();
-	
-	String getName();
+//	String Sex();
+//	
+//	String getName();
 
 }

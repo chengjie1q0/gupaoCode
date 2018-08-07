@@ -3,19 +3,19 @@ package com.gupaoedu.vip.proxy.jdk;
 //小星星、单身
 public class XiaoXingXing implements Person{
 	
-	private String sex = "女";
-	private String name = "小星星";
+//	private String sex = "女";
+//	private String name = "小星星";
 	
 	@Override
 	public void findeLove() {
-		System.out.println("我叫" + this.name + ",性别:" + this.sex + "我找对象的要求是:");
+//		System.out.println("我叫" + this.name + ",性别:" + this.sex + "我找对象的要求是:");
 		System.out.println("高富帅");
 		System.out.println("有房有车的");
 		System.out.println("身高要求180cm以上，体重70kg");
 		
 	}
 
-	@Override
+	/*@Override
 	public String Sex() {
 		return sex;
 	}
@@ -35,7 +35,7 @@ public class XiaoXingXing implements Person{
 
 	public void setName(String name) {
 		this.name = name;
-	}
+	}*/
 	
 	//回顾一下，满足代理模式应用场景的三个必要条件，穷取法
 	//1、两个角色：执行者、被代理对象

@@ -1,11 +1,15 @@
 package com.gupaoedu.vip.proxy.jdk;
 
+import com.gupaoedu.vip.proxy.custom.GPMeipo;
+
 public class TestFindLove {
 	
 	public static void main(String[] args) {
-		Person obj = (Person)new Meipo().getInstance(new XiaoXingXing());
+	
+		try {
+		/*Person obj = (Person)new Meipo().getInstance(new XiaoXingXing());
 		System.out.println(obj.getClass());
-		obj.findeLove();
+		obj.findeLove();*/
 		
 		//原理：
 		//1.拿到被代理对象的引用，然后获取它的接口
@@ -13,6 +17,24 @@ public class TestFindLove {
 		//3.把被代理对象的引用也拿到了
 		//4.重新动态生成一个class字节码
 		//5.然后编译
+		
+		
+		//获取字节码内容
+//		byte[] data = ProxyGenerator.generateProxyClass("$Proxy0", new Class[]{Person.class});
+//		FileOutputStream os = new FileOutputStream("E:/GP_WORKSPACE/$Proxy0.class");
+//		os.write(data);
+//		os.close();
+		
+		//是什么?
+		//为什么？
+		//怎么做？
+			Person obj = (Person)new GPMeipo().getInstance(new XiaoXingXing());
+			System.out.println(obj.getClass());
+			obj.findeLove();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 }
