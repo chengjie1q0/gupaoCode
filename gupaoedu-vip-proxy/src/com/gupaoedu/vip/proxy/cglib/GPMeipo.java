@@ -1,8 +1,6 @@
 package com.gupaoedu.vip.proxy.cglib;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
